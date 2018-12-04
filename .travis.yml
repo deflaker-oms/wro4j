@@ -8,8 +8,7 @@ jdk:
 script:  mvn -B verify
 # script:  mvn -B -pl \!"wro4j maven plugin" verify
 env: 
-  - MAVEN_OPTS=" -Xmx2048m -Xms768m -XX:MaxPermSize=512m"
-  - FIREBASE_KEY=AIzaSyDU7I6pnN322BvRNN24jRX52owAvuHH1K4
+  - MAVEN_OPTS=" -Xmx2048m -Xms768m -XX:MaxPermSize=512m" FIREBASE_KEY="AIzaSyDU7I6pnN322BvRNN24jRX52owAvuHH1K4"
 
 before_install:
   - unset TRAVIS
